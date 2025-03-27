@@ -12,9 +12,9 @@ function popsnap() {
         document.getElementById(`output`).innerHTML ="Pop"
     } else if (input % 6 == 0){
         document.getElementById(`output`).innerHTML ="Snap"
-    } else if (typeof(input) == Number) {
-        document.getElementById(`output`).innerHTML = input
     } else if (input == `chicken` || input == `Chicken`) {
         document.getElementById(`body`).style.backgroundImage = "url(egg.png)";
+    } else{
+        document.getElementById(`output`).innerHTML = input
     }
 }
